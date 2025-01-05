@@ -1,6 +1,6 @@
 const list1= [1, 2, 3, 4]
 const list2=[]
-const nomes = ["joao", "maria", "jose"]
+const nomes = ["joao", "maria", "anabela"]
 
 
 //map: aplica uma função a cada elemento da coleção original, retornando uma nova coleção com os elementos alterados
@@ -63,11 +63,21 @@ function produto(x, y){
 }
 
 const reduce3 = list1.reduce(produto)
+console.log("REDUCE COM MULTIPLICAÇÃO --------------")
 console.log(reduce3)
 
 //sort: ordena a colecao conforme a funcao de comparçao 
 //informada como parametro
 
+const sort1 = nomes.sort();
 
+console.log("SORT -------------")
+console.log(sort1)
 
+function compararPorTamanho(sort1, sort2){
+    return sort1.length - sort2.length
+}
 
+const sort2 = nomes.sort(compararPorTamanho) //altera o array
+
+console.log(sort2) //esta ordenando por tamanho
