@@ -19,3 +19,22 @@ const obj = {
         active: true
     }
 };
+
+const {id, client} = obj; //criando variaveis isoladas que fazem referencia ao conteudo do obj
+
+function subTotal({price, quantity}){
+    return price * quantity
+} 
+
+console.log(subTotal(obj.items[1]))
+
+function total({items}) {
+    let soma = 0
+    for (let i = 0; i<items.length; i++){
+        soma = soma + subTotal(items[i])
+    }
+    
+    return soma
+}
+
+console.log(total(obj))
