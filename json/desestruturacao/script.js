@@ -33,8 +33,10 @@ function total({items}) {
     for (let i = 0; i<items.length; i++){
         soma = soma + subTotal(items[i])
     }
-    
+
     return soma
 }
 
 console.log(total(obj))
+
+const [item1, item2] = obj.items //este exemplo pega os dois items contidos no objeto, se houvessem mais itens teria que seguir com item3, 4 e etc. No caso estamos isolando os items
