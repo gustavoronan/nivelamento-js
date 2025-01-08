@@ -25,3 +25,18 @@ const myNumbers=[2,3,10,5]
 const result3 = Math.max(...myNumbers)
 
 console.log(result3)
+
+//spread: objeto -> valores separados por virgula
+
+const item = {
+    description: "Computador",
+    price: 2000,
+    quantity: 5
+}
+
+const cloneItem = { ...item } //clonando os dados separados por virgula
+
+const cloneItemPlus = { ...item, tamanho: 10 } //adicionando um valor a mais pegando como base um objeto ja criado
+
+console.log(cloneItem)
+console.log(cloneItemPlus)
