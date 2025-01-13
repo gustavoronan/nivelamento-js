@@ -7,7 +7,6 @@ class Product {
 
     total(){
         return this.price * this.quantity
-
     }
 
     add(amount){
