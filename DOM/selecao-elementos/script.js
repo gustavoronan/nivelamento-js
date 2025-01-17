@@ -18,7 +18,6 @@ card1.appendChild(paragrafo)
 card1.classList.add("super-border") //criado no css alterado no js
 
 //const cards = document.querySelectorAll(".card")
-
 //comentado mas eh uma forma valida
 
 const cards = document.getElementsByClassName("card")
@@ -29,3 +28,7 @@ console.log(cards[0])
 Array.from(cards).map(item =>{
     console.log(item.innerHTML) //para cada card printa o conteudo do card
 }) //transformando em um array
+
+const cardId = document.querySelector('[data-product-id="32"]') //pegando a partir de um id gerado no data-set do html
+
+console.log(cardId) //printando na tela
